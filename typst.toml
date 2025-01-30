@@ -13,4 +13,4 @@ compiler = "0.12.0"
 [template]
 path = "template"
 entrypoint = "pagebordering-example.typ"
-thumbnail = "pagebordering-example-table-header-footer.png"
+thumbnail = "assets/pagebordering-example-table-header-footer.png"
