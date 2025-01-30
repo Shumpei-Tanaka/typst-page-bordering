@@ -1,0 +1,16 @@
+[package]
+name = "pagebordering"
+version = "1.0.0"
+entrypoint = "src/pagebordering.typ"
+authors = ["Shumpei Tanaka"]
+license = "MIT"
+description = "Way to write border around page margin and header/footer."
+homepage = "https://shumpei-tanaka.github.io/"
+repository = "https://github.com/Shumpei-Tanaka/typst-pagebordering"
+categories = ["layout", "office", "report"]
+compiler = "0.12.0"
+
+[template]
+path = "template"
+entrypoint = "pagebordering-example.typ"
+thumbnail = "thumbnail.png"
