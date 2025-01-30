@@ -1,7 +1,7 @@
 [package]
-name = "pagebordering"
+name = "page-bordering"
 version = "1.0.0"
-entrypoint = "src/pagebordering.typ"
+entrypoint = "src/page-bordering.typ"
 authors = ["Shumpei Tanaka"]
 license = "MIT"
 description = "Way to write border around page margin and header/footer."
@@ -13,5 +13,5 @@ exclude = ["examples/*"]
 
 [template]
 path = "template"
-entrypoint = "pagebordering-example.typ"
-thumbnail = "assets/pagebordering-example-table-header-footer.png"
+entrypoint = "page-bordering-example.typ"
+thumbnail = "assets/page-bordering-example-table-header-footer.png"

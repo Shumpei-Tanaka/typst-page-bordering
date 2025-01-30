@@ -1,5 +1,5 @@
 
-#let pagebordering(
+#let page-bordering(
   page-args: (
     margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
   ),

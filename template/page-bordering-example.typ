@@ -37,8 +37,7 @@
     table.hline(),
   )
 }
-
-#import "../src/pagebordering.typ": pagebordering
+#import "@preview/page-bordering:1.0.0": pagebordering
 #show: pagebordering.with(
   page-args: (
     margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
