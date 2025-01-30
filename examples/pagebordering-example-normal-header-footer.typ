@@ -27,7 +27,7 @@
   )
 }
 
-#import "src/pagebordering.typ": pagebordering
+#import "../src/pagebordering.typ": pagebordering
 #show: pagebordering.with(
   page-args: (
     margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
@@ -35,8 +35,8 @@
   expand: 15pt,
   space-top: 15pt,
   space-bottom: 15pt,
-  strokeHeader: auto,
-  strokeFooter: auto,
+  strokeHeader: none,
+  strokeFooter: none,
   header: header,
   footer: footer,
 )

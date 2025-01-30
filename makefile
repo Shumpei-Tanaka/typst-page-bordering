@@ -1,7 +1,7 @@
-COMMAND := typst compile -f png
+COMMAND := typst compile -f png --root .
 
 OBJDIR := assets
-SRCDIR := .
+SRCDIR := examples
 
 SRCSUF := .typ
 ADDSUF := 

@@ -11,7 +11,7 @@
   ]
 }
 
-#import "src/pagebordering.typ": pagebordering
+#import "../src/pagebordering.typ": pagebordering
 #show: pagebordering.with(
   page-args: (
     paper: "a6",

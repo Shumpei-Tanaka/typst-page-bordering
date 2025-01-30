@@ -1,21 +1,14 @@
 
 #let header = {
   set align(bottom)
+  show table.cell.where(y: 0): set align(left)
   set text(weight: "bold")
   table(
-    stroke: none,
+    stroke: (y: none),
     columns: (0.8fr, 1.4fr, 0.8fr),
     rows: 1fr,
-    [], [Product Specification document], [],
-  )
-}
-
-#let footer = {
-  set text(weight: "bold")
-  table(
-    stroke: none,
-    columns: (0.8fr, 1.4fr, 0.8fr),
-    rows: 1fr,
+    table.hline(),
+    [Document ID], [Title], [page],
     [PREFIX-12345678],
     [Product Specification document],
     [
@@ -27,7 +20,25 @@
   )
 }
 
-#import "src/pagebordering.typ": pagebordering
+#let footer = {
+  set text(weight: "bold")
+  table(
+    stroke: (y: none),
+    columns: (0.8fr, 1.4fr, 0.8fr),
+    rows: 1fr,
+    [PREFIX-12345678],
+    [Product Specification document],
+    [
+      #context counter(page).display(
+        "1 / 1",
+        both: true,
+      )
+    ],
+    table.hline(),
+  )
+}
+
+#import "../src/pagebordering.typ": pagebordering
 #show: pagebordering.with(
   page-args: (
     margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
