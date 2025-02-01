@@ -11,12 +11,11 @@
   ]
 }
 
+#set page(paper: "a6")
+
 #import "../src/page-bordering.typ": page-bordering
 #show: page-bordering.with(
-  page-args: (
-    paper: "a6",
-    margin: (left: 80pt, right: 80pt, top: 80pt, bottom: 80pt),
-  ),
+  margin: (left: 80pt, right: 80pt, top: 80pt, bottom: 80pt),
   expand: 40pt,
   space-top: 20pt,
   space-bottom: 20pt,

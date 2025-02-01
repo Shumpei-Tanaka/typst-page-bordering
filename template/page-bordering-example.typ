@@ -39,9 +39,7 @@
 }
 #import "@preview/page-bordering:1.0.0": page-bordering
 #show: page-bordering.with(
-  page-args: (
-    margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
-  ),
+  margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
   expand: 15pt,
   space-top: 15pt,
   space-bottom: 15pt,
