@@ -69,12 +69,10 @@ This package provide a function: `page-bordering`.
 
 import / setting script is shown below.
 
-```
+```typst
 #import "@preview/page-bordering:1.0.0": page-bordering
 #show: page-bordering.with(
-  page-args: (
-    margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
-  ),
+  margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
   expand: 15pt,
   space-top: 15pt,
   space-bottom: 15pt,
@@ -85,9 +83,9 @@ import / setting script is shown below.
 )
 ```
 
-`page-args` is passed in `page()` function.
+`margin` is passed in `page()` function.
 
-`page-args.margin` must to be dictionary include 4 direction.
+`margin` must to be dictionary include 4 direction.
 
 `header` and `footer` is called outside of `page()`.
 

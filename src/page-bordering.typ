@@ -1,8 +1,6 @@
 
 #let page-bordering(
-  page-args: (
-    margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
-  ),
+  margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
   expand: 15pt,
   space-top: 15pt,
   space-bottom: 15pt,
@@ -12,32 +10,25 @@
   footer: "",
   body,
 ) = {
-  if "margin" not in page-args {
-    page-args.insert("margin", (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt))
-  }
   if not (
-    type(page-args.margin) == dictionary
-      and "left" in page-args.margin
-      and "right" in page-args.margin
-      and "top" in page-args.margin
-      and "bottom" in page-args.margin
+    type(margin) == dictionary and "left" in margin and "right" in margin and "top" in margin and "bottom" in margin
   ) {
-    [`pagebordering` failed.
+    [`page-bordering` failed.
 
-      *Please set page-args.margin as dictionary of 4 direction.*
+      *Please set page-bordering(margin: ) as dictionary of 4 direction.*
 
       e.g.
       ```
-      page-args: (
+      page-bordering(
         margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
       ),
       ```
     ]
     return
   }
-  set page(..page-args)
+  set page(margin: margin)
 
-  let (left: ml, right: mr, top: mt, bottom: mb) = page-args.margin
+  let (left: ml, right: mr, top: mt, bottom: mb) = margin
   let insetL = ml - expand
   let insetR = mr - expand
   set page(
