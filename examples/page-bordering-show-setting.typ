@@ -19,8 +19,8 @@
   expand: 40pt,
   space-top: 20pt,
   space-bottom: 20pt,
-  strokeHeader: auto,
-  strokeFooter: auto,
+  stroke-header: auto,
+  stroke-footer: auto,
   header: header,
   footer: footer,
 )

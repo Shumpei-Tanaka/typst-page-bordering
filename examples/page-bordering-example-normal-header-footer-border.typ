@@ -33,8 +33,8 @@
   expand: 15pt,
   space-top: 15pt,
   space-bottom: 15pt,
-  strokeHeader: auto,
-  strokeFooter: auto,
+  stroke-header: auto,
+  stroke-footer: auto,
   header: header,
   footer: footer,
 )
