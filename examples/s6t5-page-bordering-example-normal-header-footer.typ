@@ -27,8 +27,8 @@
   )
 }
 
-#import "../src/page-bordering.typ": page-bordering
-#show: page-bordering.with(
+#import "../src/s6t5-page-bordering.typ": s6t5-page-bordering
+#show: s6t5-page-bordering.with(
   margin: (left: 30pt, right: 30pt, top: 60pt, bottom: 60pt),
   expand: 15pt,
   space-top: 15pt,
